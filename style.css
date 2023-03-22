@@ -14,14 +14,29 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+  background: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: hsl(185deg, 75%, 39%);
+}
+
 main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./images/bg-pattern-top.svg) no-repeat -63% 300%,
-    url(./images/bg-pattern-bottom.svg) no-repeat 150% -290%;
-  background-color: var(--Dark-cyan);
+}
+
+.sr-only {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 .card {
@@ -96,9 +111,9 @@ main {
 }
 
 @media (max-width: 768px) {
-  main {
+  /* main {
     background: url(./images/bg-pattern-top.svg) no-repeat 118% 700%,
       url(./images/bg-pattern-bottom.svg) no-repeat -28% -500%;
     background-color: var(--Dark-cyan);
-  }
+  } */
 }
