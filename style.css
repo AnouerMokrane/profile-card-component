@@ -98,8 +98,9 @@ main {
   padding: 25px 20px;
 }
 
-.card .bottom .col h4 {
+.card .bottom .col .num {
   font-size: 18px;
+  font-weight: bold;
   color: var(--Very-dark-desaturated-blue);
   margin-bottom: 5px;
 }
@@ -108,12 +109,4 @@ main {
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--Dark-gray);
-}
-
-@media (max-width: 768px) {
-  /* main {
-    background: url(./images/bg-pattern-top.svg) no-repeat 118% 700%,
-      url(./images/bg-pattern-bottom.svg) no-repeat -28% -500%;
-    background-color: var(--Dark-cyan);
-  } */
 }
